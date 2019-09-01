@@ -1,0 +1,13 @@
+{
+    "name": "sgkirby/climatestrike",
+    "description": "Replace entire website with climate strike notice",
+    "version": "1.0.0",
+    "type": "kirby-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastian Greger",
+            "email": "msg@sebastiangreger.net"
+        }
+    ],
+}
