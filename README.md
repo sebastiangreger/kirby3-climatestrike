@@ -4,21 +4,19 @@ A barebone Kirby 3 plugin to temporarily disable a website for the [Global Clima
 
 The plugin disables the entire website and returns a placeholder page along with HTTP code 503 ("Service not available") to [avoid negative impact](https://yoast.com/http-503-site-maintenance-seo/) on SEO. It further provides a means to keep alive legally required URLs, such as the Impressum (for German sites) or privacy policy.
 
-Inspired by [digital.globalclimatestrike.net](https://digital.globalclimatestrike.net/), but free from external dependencies, JavaScript, and tracking.
+Inspired by [digital.globalclimatestrike.net](https://digital.globalclimatestrike.net/), but free from external dependencies, JavaScript, and tracking. [More background info on my blog](https://sebastiangreger.net/2019/09/global-climate-strike-kirby-plugin/).
 
-## Installation
+## Installation and setup
 
 Download and copy this repository to `/site/plugins/kirby3-climatestrike`.
 
-Set a reminder on your calendar to remove the plugin after 21 Sep (keep your site setup clean).
+To set up what pages should remain reachable, edit the array `$keepalive` in `index.php` (e.g. all legally required pages) and adjust the footer links in `placeholder.html` accordingly.
 
-## Setup
+Optional: For designing your own landing page, adjust the HTML/CSS of `placeholder.html`; you may consider taking inspiration and using visuals from [globalclimatestrike.net](https://globalclimatestrike.net/spread-the-word-climate-strike/#style).
 
-For designing your own landing page, adjust the HTML/CSS of `placeholder.html`; you may consider taking inspiration and using visuals from [globalclimatestrike.net](https://globalclimatestrike.net/spread-the-word-climate-strike/#style).
+Testing: Change the variable `$strikedate` to today's date; depending on your server setup, the dated used might be your local time or UTC.
 
-To set up what pages should remain reachable, edit the array `$keepalive` (e.g. all legally required pages).
-
-For testing, change the variable `$strikedate` to today's date; depending on your server setup, the dated used might be your local time or UTC.
+Set a reminder on your calendar to remove the plugin on or after 21 Sep (keep your site setup clean).
 
 ## License
 
